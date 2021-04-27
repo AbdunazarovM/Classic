@@ -1,0 +1,224 @@
+/*Fonts*/
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    src:
+         url("../fonts/montserrat-v15-latin-regular.woff2") format("woff2"),
+         url("../fonts/montserrat-v15-latin-regular.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    src:
+         url("../fonts/montserrat-v15-latin-600.woff2") format("woff2"),
+         url("../fonts/montserrat-v15-latin-600.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    src:
+         url("../fonts/montserrat-v15-latin-700.woff2") format("woff2"),
+         url("../fonts/montserrat-v15-latin-700.woff") format("woff");
+  }
+
+:root{
+    --text-color: #222;
+    --white-color: #ffffff;
+    --active-color: #59aaf1;
+    --passive-color: #eceef6;
+    --header-bg-color: #f0f5fb;
+    --font-family: "Montserrat", "Arial", sans-serif;
+}
+
+
+
+/*GLOBAL STYLES*/
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family:"Montserrat", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--text-color);
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.container{
+    width: 1160px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*Header boshlandi*/
+
+.site-header{
+    padding-top: 25px;
+    background: url(../images/bg-icon.png) no-repeat center 50px var(--header-bg-color);
+}
+
+.site-header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__list{
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar__item{
+    margin-right: 40px;
+}
+
+.navbar__link{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.logo__img{
+    display: block;
+}
+
+.work{
+    display: flex;
+}
+
+.work__time{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-right: 40px;
+}
+
+.work__time::before{
+    content: "";
+    width: 4px;
+    height: 4px;
+    margin-right: 9px;
+    border-radius: 50%;
+    background-color: #46cb72;
+}
+
+.work__tel{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.work__tel::before{
+    content: "";
+    width: 33px;
+    height: 33px;
+    margin-right: 16px;
+    padding: 10px;
+     background:url(../images/call-center.png) no-repeat center center,
+               linear-gradient(287.74deg, #F58656 8.52%, #FE5626 92.72%);
+    box-shadow: 0px 4px 8px rgba(205, 169, 41, 0.26);
+    border-radius: 50%;
+}
+
+/*Header tugadi*/
+
+/*Hero boshlandi*/
+
+.hero{
+    background-image: url(../images/vegitable.png),
+                        url(../images/bg-icon.png);
+    background-repeat: no-repeat;
+    background-position: center 50px,
+                        center -43px;
+    background-color: var(--header-bg-color);
+}
+
+.hero__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 105px;
+    padding-bottom: 400px; 
+    position: relative;
+}
+
+.hero__pizza{
+    position: absolute;
+    top: 200px;
+    right: 50px;
+}
+
+.hero__title{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    margin-top: 0;
+}
+
+.hero__text{
+    width: 621px;
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+}
+
+.hero__offer{
+    position: relative;
+    top: 100px;
+    right: -500px;
+    width: 200px;
+    text-align: end;
+}
+
+.hero__span{
+    font-weight: 700;
+    color: orange;
+}
+
+.hero__button{
+    position: relative;
+    top: 110px;
+    right: -180px;
+    border: none;
+    padding: 16.5px;
+    background-color: var(--white-color);
+    background-position: center center;
+    background: url(../images/vector-plus.png) no-repeat center center, linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(287.74deg, #F58656 8.52%, #FE5626 92.72%);
+    box-shadow: 0px 4px 8px rgba(205, 169, 41, 0.26);
+    border-radius: 50%;
+}
+
+.hero__button::after{
+    content: "";
+    position: absolute;
+    background-image: url(../images/line.svg);
+    width: 141px;
+    height: 40.5px;
+    top: -45px;
+    left: 40px;
+}
+
+/*Hero tugadi*/
