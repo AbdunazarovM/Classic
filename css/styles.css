@@ -506,7 +506,35 @@ h3{
 .form-out__car{
     position: absolute;
     top: 320px;
-    right: 250px;
+    right: 280px;
 }
 
 /*Form-out tugadi*/
+
+/*Site-footer boshlandi*/
+
+.site-footer{
+    padding-top: 25px;
+
+}
+
+.site-footer__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo__img{
+    display: block;
+}
+
+.site-footer__text-bold{
+    font-weight: 700;    
+}
+
+.site-footer__text-bold::after{
+    content: ".";
+    width: 3px;
+    height: 3px;
+    color: #e45759;
+}
