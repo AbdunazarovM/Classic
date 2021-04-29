@@ -5,27 +5,27 @@
     font-style: normal;
     font-weight: 400;
     src:
-         url("../fonts/montserrat-v15-latin-regular.woff2") format("woff2"),
-         url("../fonts/montserrat-v15-latin-regular.woff") format("woff");
-  }
-
+         url("../fonts/montserrat-v15-latin_cyrillic-regular.woff2") format("woff2"),
+         url("../fonts/montserrat-v15-latin_cyrillic-regular.woff") format("woff"); 
+}
+  
   @font-face {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
     src:
-         url("../fonts/montserrat-v15-latin-600.woff2") format("woff2"),
-         url("../fonts/montserrat-v15-latin-600.woff") format("woff");
-  }
+         url("../fonts/montserrat-v15-latin_cyrillic-600.woff2") format("woff2"),
+         url("../fonts/montserrat-v15-latin_cyrillic-600.woff") format("woff"); 
+}
 
   @font-face {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 700;
     src:
-         url("../fonts/montserrat-v15-latin-700.woff2") format("woff2"),
-         url("../fonts/montserrat-v15-latin-700.woff") format("woff");
-  }
+         url("../fonts/montserrat-v15-latin_cyrillic-700.woff2") format("woff2"),
+         url("../fonts/montserrat-v15-latin_cyrillic-700.woff") format("woff"); 
+}
 
 :root{
     --text-color: #222;
@@ -201,7 +201,7 @@ body{
 .hero__button{
     position: relative;
     top: 110px;
-    right: -180px;
+    right: -200px;
     border: none;
     padding: 16.5px;
     background-color: var(--white-color);
@@ -283,7 +283,7 @@ body{
     flex-wrap: wrap;
     list-style-type: none;
     padding: 0;
-    margin-bottom: 20px;
+    margin-bottom: 55px;
 }
 
 .popular__icon-pizza{
@@ -340,7 +340,7 @@ body{
 
 .popular__pizza-info{
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
     margin-bottom: 8px;
 }
@@ -348,7 +348,13 @@ body{
 h3{
     font-size: 16px;
     font-weight: 600;
+    line-height: 1.4;
     margin: 0;
+    white-space: nowrap;
+}
+
+.popular__pizza-size{
+    font-size: 12px;
 }
 
 .popular__icon-pizza p{
@@ -365,7 +371,7 @@ h3{
 
 .popular__pizza-basket{
     align-self: center;
-    padding: 16.5px 16.5px;
+    padding: 15.5px 15.5px;
     margin-bottom: -15px;
     border: 2px solid #eceef6;
     border-radius: 50%;
@@ -377,7 +383,7 @@ h3{
     align-self: center;
     padding: 16.5px 16.5px;
     margin-bottom: -15px;
-    border: 2px solid #fe5626;
+    border: none;
     border-radius: 50%;
     background: url(../images/bascet-white.svg) no-repeat center 9px,
     linear-gradient(287.74deg, #F58656 8.52%, #FE5626 92.72%), linear-gradient(180deg, #FE5626 0%, #F23F0E 100%), #59AAF1;
