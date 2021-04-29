@@ -58,7 +58,7 @@ body{
 
 main{
     padding-top: 140px;
-    padding-bottom: 127px;
+
 }
 
 .visually-hidden {
@@ -410,6 +410,7 @@ h3{
 
 .instagram-blog{
     padding: 40px 0;
+    margin-bottom: 127px;
     background-image: url(../images/instagram-bg.png);
     background-repeat: repeat-x;
 }
@@ -443,3 +444,69 @@ h3{
    text-decoration: none;
    color: var(--white-color);
 }
+
+/*Instagram blog tugadi*/
+
+/*Form-out boshlandi*/
+
+.form-out{
+    background-image: url(../images/bg-vegetable.png),
+                        url(../images/icon-section.png);
+    background-repeat: no-repeat;
+    background-position: center 125px,
+                        center bottom;
+    background-color: var(--header-bg-color);
+}
+
+.form-out__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 85px;
+    padding-bottom: 276px; 
+    position: relative;
+}
+
+.form-input{
+    background: #FFFFFF;
+    border: 2px solid #ECEEF7;
+    box-sizing: border-box;
+    border-radius: 57px;
+    padding: 20px 20px 20px 30px;
+    margin-right: 40px;
+}
+
+.form-out__btn{
+    font-size: 18px;
+    font-weight: 700;
+    padding: 18px 116px 18px 58px;
+    background: linear-gradient(180deg, #FE5626 0%, #F23F0E 100%), #59AAF1;
+    box-shadow: 0px 4px 8px rgba(205, 169, 41, 0.26);
+    border-radius: 59px;
+    border: none;
+    color: var(--white-color);
+    position: relative;
+}
+
+.form-out__btn::after{
+    content: "";
+    position: absolute;
+    background-image: url(../images/arrow.png);
+    width: 35px;
+    height: 11px;
+    right: 45px;
+}
+
+.form-out__title{
+    max-width: 500px;
+    margin-bottom: 42px;
+    text-align: center;
+}
+
+.form-out__car{
+    position: absolute;
+    top: 320px;
+    right: 250px;
+}
+
+/*Form-out tugadi*/
