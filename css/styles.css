@@ -406,6 +406,7 @@ main{
     background-position: center 125px,
                         center bottom;
     background-color: var(--header-bg-color);
+    z-index: -3;
 }
 .form-out__container{
     display: flex;
