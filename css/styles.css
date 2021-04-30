@@ -454,6 +454,7 @@ main{
 }
 .form-out__car{
     position: absolute;
+    z-index: -1;
     top: 320px;
     right: 280px;
 }
@@ -471,6 +472,8 @@ main{
 }
 .logo__img{
     display: block;
+    position: relative;
+    z-index: 1;
 }
 .site-footer__text-bold{
     font-weight: 700;    
