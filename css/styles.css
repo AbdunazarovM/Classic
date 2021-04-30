@@ -319,6 +319,8 @@ h3{
 .popular__icon-pizza p{
     margin: 0;
     margin-bottom: 19px;
+    font-size: 12px;
+    line-height: 1.2;
 }
 .popular__pizza-cost{
     align-self: center;
