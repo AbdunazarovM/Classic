@@ -414,6 +414,7 @@ main{
     padding-top: 85px;
     padding-bottom: 276px; 
     position: relative;
+    z-index: -2;
 }
 .form-input{
     background: #FFFFFF;
