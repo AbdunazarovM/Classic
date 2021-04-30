@@ -8,7 +8,6 @@
          url("../fonts/montserrat-v15-latin_cyrillic-regular.woff2") format("woff2"),
          url("../fonts/montserrat-v15-latin_cyrillic-regular.woff") format("woff"); 
 }
-  
   @font-face {
     font-family: "Montserrat";
     font-style: normal;
@@ -17,7 +16,6 @@
          url("../fonts/montserrat-v15-latin_cyrillic-600.woff2") format("woff2"),
          url("../fonts/montserrat-v15-latin_cyrillic-600.woff") format("woff"); 
 }
-
   @font-face {
     font-family: "Montserrat";
     font-style: normal;
@@ -26,7 +24,6 @@
          url("../fonts/montserrat-v15-latin_cyrillic-700.woff2") format("woff2"),
          url("../fonts/montserrat-v15-latin_cyrillic-700.woff") format("woff"); 
 }
-
 :root{
     --text-color: #222;
     --white-color: #ffffff;
@@ -36,31 +33,26 @@
     --font-family: "Montserrat", "Arial", sans-serif;
 }
 
-
-
 /*GLOBAL STYLES*/
+
 html{
     box-sizing: border-box;
 }
-
 *,
 *::before,
 *::after{
     box-sizing: inherit;
 }
-
 body{
     font-family:"Montserrat", "Arial", sans-serif;
     font-size: 16px;
     line-height: 1.4;
     color: var(--text-color);
 }
-
 main{
     padding-top: 140px;
 
 }
-
 .visually-hidden {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
@@ -70,14 +62,12 @@ main{
     white-space: nowrap;
     width: 1px;
 }
-
 .title{
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 18px;
     margin-top: 0;
 }
-
 .container{
     width: 1200px;
     margin: 0 auto;
@@ -91,42 +81,34 @@ main{
     padding-top: 25px;
     background: url(../images/bg-icon.png) no-repeat center 50px var(--header-bg-color);
 }
-
 .site-header__container{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .navbar__list{
     display: flex;
     list-style-type: none;
 }
-
 .navbar__item{
     margin-right: 40px;
 }
-
 .navbar__link{
     text-decoration: none;
     color: var(--text-color);
 }
-
 .logo__img{
     display: block;
 }
-
 .work{
     display: flex;
 }
-
 .work__time{
     display: flex;
     align-items: center;
     margin: 0;
     margin-right: 40px;
 }
-
 .work__time::before{
     content: "";
     width: 4px;
@@ -135,14 +117,12 @@ main{
     border-radius: 50%;
     background-color: #46cb72;
 }
-
 .work__tel{
     display: flex;
     align-items: center;
     text-decoration: none;
     color: var(--text-color);
 }
-
 .work__tel::before{
     content: "";
     width: 33px;
@@ -167,7 +147,6 @@ main{
                         center -43px;
     background-color: var(--header-bg-color);
 }
-
 .hero__container{
     display: flex;
     flex-direction: column;
@@ -176,20 +155,17 @@ main{
     padding-bottom: 400px; 
     position: relative;
 }
-
 .hero__pizza{
     position: absolute;
     top: 200px;
     right: 50px;
 }
-
 .hero__text{
     width: 621px;
     font-size: 18px;
     text-align: center;
     margin: 0;
 }
-
 .hero__offer{
     position: relative;
     top: 100px;
@@ -197,12 +173,10 @@ main{
     width: 200px;
     text-align: end;
 }
-
 .hero__span{
     font-weight: 700;
     color: orange;
 }
-
 .hero__button{
     position: relative;
     top: 110px;
@@ -216,7 +190,6 @@ main{
     box-shadow: 0px 4px 8px rgba(205, 169, 41, 0.26);
     border-radius: 50%;
 }
-
 .hero__button::after{
     content: "";
     position: absolute;
@@ -226,7 +199,6 @@ main{
     top: -45px;
     left: 40px;
 }
-
 /*Hero tugadi*/
 
 /*Popular boshlandi*/
@@ -238,35 +210,29 @@ main{
     background-size: 1581px;
     background-position: center 170px;
 }
-
 .popular__container{
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
 }
-
 .popular__massage{
     position: absolute;
     top: -119px;
     right: 15px;
 }
-
 .popular__title{
     margin-bottom: 49px;
 }
-
 .popular__list{
     display: flex;
     list-style-type: none;
     padding: 0; 
     margin-bottom: 50px;
 }
-
 .popular__item:not(:last-child){
     margin-right: 31px;
 }
-
 .popular__link{
     padding: 15px 46px;
     text-decoration: none;
@@ -276,12 +242,10 @@ main{
     color: var(--text-color);
     line-height: 1.4;
 }
-
 .active{
     background-color: var(--active-color);
     color: var(--white-color);
 }
-
 .popular__list-pizza{
     display: flex;
     flex-wrap: wrap;
@@ -289,7 +253,6 @@ main{
     padding: 0;
     margin-bottom: 55px;
 }
-
 .popular__icon-pizza{
     display: flex;
     flex-direction: column;
@@ -303,7 +266,6 @@ main{
     z-index: 1;
     position: relative;
 }
-
 .popular__icon-pizza::after{
     position: absolute;
     background-color: #FFF;
@@ -318,11 +280,9 @@ main{
     left: 108px;
     z-index: -4;
 }
-
 .popular__icon-pizza:not(:nth-child(4n)){
     margin-right: 40px;
 }
-
 .popular__xit-sell{
     position: absolute;
     font-size: 12px;
@@ -336,19 +296,16 @@ main{
     box-shadow: 0px 4px 8px rgba(205, 71, 41, 0.26);
     border-radius: 3px;
 }
-
 .popular__list-pizza img{
     margin-bottom: 30px;
     align-self: center;
 }
-
 .popular__pizza-info{
     display: flex;
     align-items: baseline;
     justify-content: space-between;
     margin-bottom: 8px;
 }
-
 h3{
     font-size: 16px;
     font-weight: 600;
@@ -356,36 +313,31 @@ h3{
     margin: 0;
     white-space: nowrap;
 }
-
 .popular__pizza-size{
     font-size: 12px;
 }
-
 .popular__icon-pizza p{
     margin: 0;
     margin-bottom: 19px;
 }
-
 .popular__pizza-cost{
     align-self: center;
     font-size: 24px;
     font-weight: 300;
     margin-bottom: 18px;
 }
-
 .popular__pizza-basket{
     align-self: center;
-    padding: 15.5px 15.5px;
+    padding: 16px 16px;
     margin-bottom: -15px;
     border: 2px solid #eceef6;
     border-radius: 50%;
     background-color: var(--white-color);
     background: url(../images/bascet.svg) no-repeat center 9px;
 }
-
 .popular__pizza-basket:hover{
     align-self: center;
-    padding: 16.5px 16.5px;
+    padding: 17px 17px;
     margin-bottom: -15px;
     border: none;
     border-radius: 50%;
@@ -393,8 +345,6 @@ h3{
     linear-gradient(287.74deg, #F58656 8.52%, #FE5626 92.72%), linear-gradient(180deg, #FE5626 0%, #F23F0E 100%), #59AAF1;
     box-shadow: 0px 4px 8px rgba(205, 71, 41, 0.26);
 }
-
-
 .popular__reset{
     padding: 30px;
     border: none;
@@ -403,7 +353,6 @@ h3{
     linear-gradient(287.74deg, #F58656 8.52%, #FE5626 92.72%);
     box-shadow: 0px 4px 8px rgba(205, 169, 41, 0.26);
 }
-
 /*Popular tugadi*/
 
 /*instagram blog boshlandi*/
@@ -419,14 +368,12 @@ h3{
     justify-content: center;
     align-items: center;
 }
-
 .instagram-content{
     padding: 20px;
     background: linear-gradient(45.04deg, #FD9924 -51.05%, #F65B16 134.89%);
     box-shadow: 0px 70px 90px rgba(253, 55, 36, 0.2), 0px 35px 50px rgba(253, 55, 36, 0.2), 0px 20px 25px rgba(253, 55, 36, 0.2);
     border-radius: 15px;
 }
-
 .instagram-border{
     padding: 55px;
     border: 2px solid rgba(255, 255, 255, 0.1);
@@ -434,17 +381,14 @@ h3{
     font-size: 24px;
     line-height: 1.2;
 }
-
 .instagram-text{
     color: var(--white-color);
 }
-
 .instagram-link{
    font-weight: 700;
    text-decoration: none;
    color: var(--white-color);
 }
-
 /*Instagram blog tugadi*/
 
 /*Form-out boshlandi*/
@@ -457,7 +401,6 @@ h3{
                         center bottom;
     background-color: var(--header-bg-color);
 }
-
 .form-out__container{
     display: flex;
     flex-direction: column;
@@ -466,7 +409,6 @@ h3{
     padding-bottom: 276px; 
     position: relative;
 }
-
 .form-input{
     background: #FFFFFF;
     border: 2px solid #ECEEF7;
@@ -476,11 +418,9 @@ h3{
     margin-right: 40px;
     outline: none;
 }
-
 .form-input:focus{
     box-shadow: inset 0 0 0 2px #fe5626;
 }
-
 .form-out__btn{
     font-size: 18px;
     font-weight: 700;
@@ -492,7 +432,6 @@ h3{
     color: var(--white-color);
     position: relative;
 }
-
 .form-out__btn::after{
     content: "";
     position: absolute;
@@ -501,42 +440,34 @@ h3{
     height: 11px;
     right: 45px;
 }
-
 .form-out__title{
     max-width: 500px;
     margin-bottom: 42px;
     text-align: center;
 }
-
 .form-out__car{
     position: absolute;
     top: 320px;
     right: 280px;
 }
-
 /*Form-out tugadi*/
 
 /*Site-footer boshlandi*/
 
 .site-footer{
     padding-top: 25px;
-
 }
-
 .site-footer__container{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .logo__img{
     display: block;
 }
-
 .site-footer__text-bold{
     font-weight: 700;    
 }
-
 .site-footer__text-bold::after{
     content: ".";
     width: 3px;
