@@ -400,13 +400,14 @@ main{
 /*Form-out boshlandi*/
 
 .form-out{
+    position: relative;
     background-image: url(../images/bg-vegetable.png),
                         url(../images/icon-section.png);
     background-repeat: no-repeat;
     background-position: center 125px,
                         center bottom;
     background-color: var(--header-bg-color);
-    z-index: -3;
+    z-index: -10;
 }
 .form-out__container{
     display: flex;
@@ -415,7 +416,6 @@ main{
     padding-top: 85px;
     padding-bottom: 276px; 
     position: relative;
-    z-index: -2;
 }
 .form-input{
     background: #FFFFFF;
@@ -455,8 +455,8 @@ main{
     text-align: center;
 }
 .form-out__car{
+    z-index: -5;
     position: absolute;
-    z-index: -1;
     top: 320px;
     right: 280px;
 }
@@ -475,7 +475,7 @@ main{
 .logo__img{
     display: block;
     position: relative;
-    z-index: 1;
+    z-index: 3;
 }
 .site-footer__text-bold{
     font-weight: 700;    
